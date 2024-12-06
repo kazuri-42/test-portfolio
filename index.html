@@ -3,55 +3,851 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Mr./Ms. [Teacher's Name]</h1>
-        <p>Subject Specialist | Mentor | Educator</p>
-      </div>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I am [Teacher's Name], an experienced educator with a passion
-          for teaching [Subject/Skills].
-        </p>
-      </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-          <li>10+ years teaching [Subject]</li>
-          <li>Worked at [School/Institution]</li>
-          <li>Recipient of [Awards]</li>
+    <div class="flex overflow-hidden flex-col bg-white">
+      <!-- header -->
+      <header
+        class="flex overflow-hidden flex-col items-center px-16 py-16 pb-6 w-full text-black bg-white min-h-[189px] max-md:px-5 max-md:max-w-full"
+        role="banner"
+      >
+        <h1
+          class="gap-8 self-stretch max-w-full text-4xl font-bold whitespace-nowrap w-[1254px]"
+        >
+          P.M.P.Sagarika
+        </h1>
+        <h2
+          class="gap-8 self-stretch max-w-full text-xl font-semibold w-[1254px]"
+        >
+          The Heart of My Teaching Journey
+        </h2>
+      </header>
+      <!-- navigations -->
+      <nav
+        class="flex overflow-hidden flex-col justify-center px-16 w-full text-base font-semibold text-black bg-white min-h-[72px] max-md:px-5 max-md:max-w-full"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <ul
+          class="flex gap-8 justify-center items-center w-full max-md:max-w-full"
+        >
+          <li
+            class="flex overflow-hidden flex-wrap gap-10 justify-center items-center self-stretch my-auto min-w-[240px] w-[1308px]"
+          >
+            <a
+              href="#home"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Home</a
+            >
+            <a
+              href="#philosophy"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Teaching Philosophy</a
+            >
+            <a
+              href="#lessons"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Lesson Plans</a
+            >
+            <a
+              href="#certification"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Certification & Education</a
+            >
+            <a
+              href="#experience"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Work Experience</a
+            >
+            <a
+              href="#contact"
+              class="self-stretch my-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              tabindex="0"
+              >Contact Me</a
+            >
+          </li>
         </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 [Teacher's Name]. All rights reserved.</p>
-    </footer>
-    <script src="app.js"></script>
+      </nav>
+      <main role="main">
+        <section
+          id="hero"
+          class="flex overflow-hidden flex-col justify-center items-center px-16 w-full text-black bg-white min-h-[628px] max-md:px-5 max-md:max-w-full"
+        >
+          <div
+            class="flex flex-wrap gap-10 items-center max-w-full min-h-[453px] w-[1281px]"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/ba377859b4ae64dc28379bc8a7467d07db67a990da4622f75502bbce48061b1f?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+              alt="Portrait of P.M.P.Sagarika"
+              class="object-contain self-stretch my-auto aspect-[0.87] min-w-[240px] w-[393px]"
+            />
+            <div
+              class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+            >
+              <div
+                class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+              >
+                <h2
+                  class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                >
+                  Teaching Portfolio
+                </h2>
+                <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                  Passionate English language educator delivering engaging and
+                  interactive lessons to foster communication skills, critical
+                  thinking, and cultural appreciation. Committed to creating an
+                  inclusive environment that encourages collaboration,
+                  problem-solving, and real-world applications for learners of
+                  all levels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          class="flex w-full bg-zinc-300 min-h-[135px] max-md:max-w-full"
+          role="separator"
+          aria-hidden="true"
+        ></div>
+        <!-- philosophy -->
+        <section
+          id="philosophy"
+          class="flex overflow-hidden flex-col justify-center items-center px-16 w-full text-black bg-white max-md:px-5 max-md:max-w-full"
+        >
+          <div
+            class="flex overflow-hidden flex-col justify-center items-center px-16 text-black bg-white max-md:px-5"
+            role="region"
+            aria-label="Teaching Philosophy Section"
+          >
+            <div
+              class="flex flex-col justify-center max-w-full text-center min-h-[331px] w-[1281px]"
+            >
+              <div
+                class="flex flex-col justify-center items-center w-full min-h-[236px]"
+              >
+                <h1
+                  class="flex-1 text-5xl font-bold leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]"
+                >
+                  Teaching Philosophy
+                </h1>
+                <p class="flex-1 text-lg leading-7 max-md:max-w-full">
+                  I believe teaching is a journey intertwined with lifelong
+                  learning. As a teacher and a learner, I continuously update my
+                  knowledge and skills to align with the ever-changing
+                  educational landscape. My teaching philosophy is built on five
+                  foundational pillars, each contributing to the holistic
+                  development of students in an interconnected world.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-full w-[1281px]">
+              <div
+                class="flex flex-wrap gap-10 items-center w-full min-h-[453px]"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/7d9eb3af93f22c1393df0f6d4bf350c9f925f011f98d8335eddc50aec00dd6e2?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt="Illustration representing lifelong education concept"
+                  class="object-contain self-stretch my-auto aspect-[0.87] min-w-[240px] w-[393px]"
+                />
+                <div
+                  class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+                >
+                  <div
+                    class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+                  >
+                    <h2
+                      class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                    >
+                      Lifelong Education
+                    </h2>
+                    <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                      Education transcends formal schooling, encompassing a
+                      continuous pursuit of knowledge and personal growth.
+                      Inspired by the concept of a growth mindset (Dweck, 2006),
+                      I instill in my students the perseverance and resilience
+                      to view challenges as opportunities for growth. By
+                      fostering this mindset, I prepare them to navigate an
+                      evolving society with confidence and adaptability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-wrap gap-10 items-center mt-6 w-full min-h-[453px]"
+              >
+                <div
+                  class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+                >
+                  <div
+                    class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+                  >
+                    <h2
+                      class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                    >
+                      Collaborative Learning
+                    </h2>
+                    <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                      Learning is most effective when it is a collective
+                      endeavor. I create a collaborative classroom environment
+                      where students are empowered to share ideas, challenge
+                      each other, and learn from diverse perspectives. Group
+                      activities, discussions, and peer assessments help build
+                      communication skills and a strong sense of community,
+                      enhancing their overall educational journey.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/7d9eb3af93f22c1393df0f6d4bf350c9f925f011f98d8335eddc50aec00dd6e2?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt="Students engaged in collaborative learning activities"
+                  class="object-contain self-stretch my-auto aspect-[0.87] min-w-[240px] w-[393px]"
+                />
+              </div>
+              <div
+                class="flex gap-10 items-center mt-6 w-full text-lg min-h-[547px]"
+              >
+                <div
+                  class="flex flex-col flex-1 shrink self-stretch my-auto w-full basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+                >
+                  <div
+                    class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+                  >
+                    <h2
+                      class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                    >
+                      Balanced Assessments
+                    </h2>
+                    <div class="mt-6 leading-7 max-md:max-w-full">
+                      <p>
+                        Assessment is a vital tool for understanding and
+                        improvement. I employ both formative and summative
+                        assessments to support learning
+                      </p>
+                      <h3 class="mt-4 font-semibold">Formative assessments</h3>
+                      <p>
+                        provide ongoing feedback, enabling me to adapt
+                        instruction to individual needs.
+                      </p>
+                      <h3 class="mt-4 font-semibold">Summative assessments</h3>
+                      <p>
+                        measure cumulative understanding and guide students
+                        toward achieving their educational milestones, such as
+                        G.C.E. Ordinary Level and Advanced Level qualifications.
+                      </p>
+                    </div>
+                    <p class="mt-6 max-md:max-w-full">
+                      This balanced approach encourages students to actively
+                      participate in their learning process.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-wrap gap-10 items-center mt-6 w-full min-h-[453px]"
+              >
+                <div
+                  class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+                >
+                  <div
+                    class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+                  >
+                    <h2
+                      class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                    >
+                      Technology in ELT
+                    </h2>
+                    <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                      Modern education demands the integration of technology to
+                      enhance learning. Utilizing the TPACK framework (Harris,
+                      Mishra & Koehler, 2009), I balance content knowledge,
+                      pedagogy, and technological tools to create engaging
+                      lessons. By incorporating multimedia, AI, and online
+                      resources, I ensure lessons are efficient and effective.
+                      Additionally, I emphasize digital citizenship, teaching
+                      students about online safety, information literacy, and
+                      ethical behavior in the digital realm.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/7d9eb3af93f22c1393df0f6d4bf350c9f925f011f98d8335eddc50aec00dd6e2?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt="Technology integration in English Language Teaching"
+                  class="object-contain self-stretch my-auto aspect-[0.87] min-w-[240px] w-[393px]"
+                />
+              </div>
+              <div
+                class="flex flex-wrap gap-10 items-center mt-6 w-full min-h-[453px]"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/7d9eb3af93f22c1393df0f6d4bf350c9f925f011f98d8335eddc50aec00dd6e2?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt="Students participating in extracurricular activities"
+                  class="object-contain self-stretch my-auto aspect-[0.87] min-w-[240px] w-[393px]"
+                />
+                <div
+                  class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 h-[453px] min-w-[240px] max-md:max-w-full"
+                >
+                  <div
+                    class="flex flex-col justify-center w-full min-h-[496px] max-md:max-w-full"
+                  >
+                    <h2
+                      class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+                    >
+                      Extracurricular Activities
+                    </h2>
+                    <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                      Extracurricular activities are essential for holistic
+                      development. For students, they foster teamwork,
+                      leadership, and mindfulness while providing social
+                      interaction and stress relief. For teachers, they build
+                      stronger student relationships and enhance professional
+                      satisfaction. These activities complement classroom
+                      learning, creating a well-rounded educational experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center pt-7 max-w-full text-lg leading-7 text-center h-[145px] w-[1281px]"
+            >
+              <p class="w-full min-h-[143px] max-md:max-w-full">
+                Education is a lifelong journey enriched by collaboration,
+                technology, diverse assessments, and extracurricular engagement.
+                By fostering a growth mindset and a dynamic learning
+                environment, I empower my students to embrace challenges and
+                unlock their full potential for a brilliant future.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="lessons"
+          class="flex overflow-hidden flex-col px-16 pt-28 pb-16 w-full bg-white max-md:px-5 max-md:pt-24 max-md:max-w-full"
+        >
+          <!-- Lesson plans section with proper semantic structure -->
+          <div
+            class="flex overflow-hidden flex-col px-16 pt-28 pb-16 bg-white max-md:px-5 max-md:pt-24"
+            role="region"
+            aria-labelledby="lessonPlansTitle"
+          >
+            <div
+              class="flex flex-col self-center max-w-full text-center text-black w-[768px]"
+            >
+              <div class="flex flex-col w-full max-md:max-w-full">
+                <h2
+                  id="lessonPlansTitle"
+                  class="self-center text-5xl font-bold leading-tight max-md:text-4xl"
+                >
+                  Lesson Plans
+                </h2>
+                <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                  Explore five carefully designed lesson plans aimed at
+                  promoting language mastery, critical thinking, and interactive
+                  learning. Click below to download the full lesson plans in PDF
+                  format.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-8 items-start mt-12 w-full min-h-[312px] max-md:mt-10 max-md:max-w-full"
+            >
+              <div
+                class="flex flex-col grow shrink justify-center px-8 py-14 border border-black border-solid min-h-[312px] min-w-[240px] w-[333px] max-md:px-5"
+              >
+                <div
+                  class="flex flex-col justify-center w-full text-center text-black min-h-[117px]"
+                >
+                  <div class="flex flex-col w-full">
+                    <h3 class="text-xl font-bold leading-7">
+                      Enhancing Vocabulary Through Storytelling
+                    </h3>
+                    <p class="mt-2 text-base leading-6">
+                      Explore the magic of words and stories in this engaging
+                      lesson.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="gap-2 self-center py-3 pr-5 pl-5 mt-8 max-w-full text-base text-white bg-black rounded-2xl border border-black border-solid w-[200px]"
+                  aria-label="Download Enhancing Vocabulary Through Storytelling lesson plan"
+                >
+                  Download Lesson Plan
+                </button>
+              </div>
+              <div
+                class="flex flex-col grow shrink justify-center px-8 py-14 border border-black border-solid min-h-[312px] min-w-[240px] w-[333px] max-md:px-5"
+              >
+                <div
+                  class="flex flex-col justify-center w-full text-center text-black min-h-[117px]"
+                >
+                  <div class="flex flex-col w-full">
+                    <h3 class="text-xl font-bold leading-7">
+                      Mastering Grammar Through Interactive Activities
+                    </h3>
+                    <p class="mt-2 text-base leading-6">
+                      Make grammar learning fun with hands-on activities and
+                      games.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="gap-2 self-center py-3 pr-5 pl-5 mt-8 max-w-full text-base text-white bg-black rounded-2xl border border-black border-solid w-[200px]"
+                  aria-label="Download Mastering Grammar Through Interactive Activities lesson plan"
+                >
+                  Download Lesson Plan
+                </button>
+              </div>
+              <div
+                class="flex flex-col grow shrink justify-center px-8 py-14 border border-black border-solid min-h-[312px] min-w-[240px] w-[333px] max-md:px-5"
+              >
+                <div
+                  class="flex flex-col justify-center w-full text-center text-black min-h-[117px]"
+                >
+                  <div class="flex flex-col w-full">
+                    <h3 class="text-xl font-bold leading-7">
+                      Developing Writing Skills with Creative Prompts
+                    </h3>
+                    <p class="mt-2 text-base leading-6">
+                      Inspire your students to express themselves creatively
+                      through writing.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="gap-2 self-center py-3 pr-5 pl-5 mt-8 max-w-full text-base text-white bg-black rounded-2xl border border-black border-solid w-[200px]"
+                  aria-label="Download Developing Writing Skills with Creative Prompts lesson plan"
+                >
+                  Download Lesson Plan
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-8 justify-center items-start mt-12 w-full min-h-[312px] max-md:mt-10 max-md:max-w-full"
+            >
+              <div
+                class="flex flex-col justify-center px-8 py-14 border border-black border-solid min-h-[312px] min-w-[240px] w-[416px] max-md:px-5"
+              >
+                <div
+                  class="flex flex-col justify-center w-full text-center text-black min-h-[117px]"
+                >
+                  <div class="flex flex-col w-full">
+                    <h3 class="text-xl font-bold leading-7">
+                      Building Speaking Confidence with Role Play
+                    </h3>
+                    <p class="mt-2 text-base leading-6">
+                      Encourage fluency and confidence through real-life
+                      speaking scenarios.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="gap-2 self-center py-3 pr-5 pl-5 mt-8 max-w-full text-base text-white bg-black rounded-2xl border border-black border-solid w-[200px]"
+                  aria-label="Download Building Speaking Confidence with Role Play lesson plan"
+                >
+                  Download Lesson Plan
+                </button>
+              </div>
+              <div
+                class="flex flex-col justify-center px-8 py-14 border border-black border-solid min-h-[312px] min-w-[240px] w-[416px] max-md:px-5"
+              >
+                <div
+                  class="flex flex-col justify-center w-full text-center text-black min-h-[117px]"
+                >
+                  <div class="flex flex-col w-full">
+                    <h3 class="text-xl font-bold leading-7">
+                      Exploring Literature Through Critical Analysis
+                    </h3>
+                    <p class="mt-2 text-base leading-6">
+                      Delve into the depths of literary works and foster
+                      analytical thinking.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="gap-2 self-center py-3 pr-5 pl-5 mt-8 max-w-full text-base text-white bg-black rounded-2xl border border-black border-solid w-[200px]"
+                  aria-label="Download Exploring Literature Through Critical Analysis lesson plan"
+                >
+                  Download Lesson Plan
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center self-center mt-12 max-w-full w-[919px] max-md:mt-10"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/d1042ef6eeb866d4a5dad1cf5750fed9e910d85ca5f9c8987e728997861db57c?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                alt="Visual representation of lesson plan materials and teaching resources"
+                class="object-contain w-full aspect-[1.77]"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="certification"
+          class="flex overflow-hidden flex-col px-16 py-32 w-full text-black bg-white min-h-[768px] max-md:px-5 max-md:py-24 max-md:max-w-full"
+        >
+          <!-- Certification section with proper semantic structure -->
+          <div
+            class="flex overflow-hidden flex-col px-16 py-32 text-black bg-white max-md:px-5 max-md:py-24"
+            role="region"
+            aria-labelledby="certificationTitle"
+          >
+            <div
+              class="flex flex-col items-start self-center max-w-full text-center w-[768px]"
+            >
+              <h2
+                id="certificationTitle"
+                class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+              >
+                Certification & Education
+              </h2>
+              <div class="mt-6 text-lg max-md:max-w-full">
+                Teaching and Subject Areas of Concentration
+              </div>
+            </div>
+            <div
+              class="flex flex-col mt-20 w-full text-lg max-md:mt-10 max-md:max-w-full"
+            >
+              <div
+                class="flex flex-wrap gap-8 items-start w-full min-h-[338px] max-md:max-w-full"
+                role="list"
+              >
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+                <div
+                  class="overflow-hidden grow shrink p-8 border border-black border-solid min-w-[240px] w-[333px] max-md:px-5"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  Master of Education
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="experience"
+          class="flex overflow-hidden flex-col px-16 pt-28 pb-14 w-full text-black bg-white max-md:px-5 max-md:pt-24 max-md:max-w-full"
+        >
+          <!-- Work experience section with proper semantic structure -->
+          <section
+            aria-labelledby="work-experience-title"
+            class="flex overflow-hidden flex-col px-16 pt-28 pb-14 text-black bg-white max-md:px-5 max-md:pt-24"
+          >
+            <div class="flex flex-col max-w-full w-[768px]">
+              <h1
+                id="work-experience-title"
+                class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+              >
+                Work Experience
+              </h1>
+              <p class="mt-6 text-lg leading-7 max-md:max-w-full">
+                Frequently asked questions ordered by popularity. Remember that
+                if the visitor has not committed to the call to action, they may
+                still have questions (doubts) that can be answered.
+              </p>
+            </div>
+            <div
+              class="flex flex-col mt-20 w-full text-lg leading-7 max-md:mt-10 max-md:max-w-full"
+            >
+              <article class="flex flex-col w-full max-md:max-w-full">
+                <div
+                  class="flex w-full bg-black min-h-[1px] max-md:max-w-full"
+                  role="separator"
+                ></div>
+                <div
+                  class="flex flex-wrap gap-10 items-start mt-6 w-full max-md:max-w-full"
+                >
+                  <h2 class="font-bold w-[500px] max-md:max-w-full">
+                    English Language Teacher Grade 9 - 12 Green Valley High
+                    School Colombo, Sri Lanka 2020 - Present
+                  </h2>
+                  <div class="flex-1 shrink basis-0 max-md:max-w-full">
+                    <p>
+                      Designed and implemented a curriculum aligned with
+                      national English Language standards to improve students'
+                      reading, writing, speaking, and listening skills.
+                    </p>
+                    <p>
+                      Implemented formative and summative assessments to track
+                      and support students' learning journeys.
+                    </p>
+                    <p>
+                      Led a weekly book club to cultivate a love for reading and
+                      improve comprehension among students.
+                    </p>
+                    <p>
+                      Coordinated extracurricular activities, including drama
+                      performances and poetry recitations, to encourage artistic
+                      expression.
+                    </p>
+                    <p>
+                      Worked closely with the academic team to update teaching
+                      strategies and ensure inclusivity in the classroom.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="flex flex-col mt-12 w-full max-md:mt-10 max-md:max-w-full"
+              >
+                <div
+                  class="flex w-full bg-black min-h-[1px] max-md:max-w-full"
+                  role="separator"
+                ></div>
+                <div
+                  class="flex flex-wrap gap-10 items-start mt-6 w-full max-md:max-w-full"
+                >
+                  <h2 class="font-bold w-[500px] max-md:max-w-full">
+                    English Literature Teacher Grade 6 - 8 Bright Horizon
+                    International School Gampaha, Sri Lanka 2015 - 2020
+                  </h2>
+                  <div class="flex-1 shrink basis-0 max-md:max-w-full">
+                    <p>
+                      Delivered engaging lessons on English literature, focusing
+                      on analysis, thematic discussions, and creative
+                      interpretations.
+                    </p>
+                    <p>
+                      Implemented formative and summative assessments to track
+                      and support students' learning journeys.
+                    </p>
+                    <p>
+                      Led a weekly book club to cultivate a love for reading and
+                      improve comprehension among students.
+                    </p>
+                    <p>
+                      Coordinated extracurricular activities, including drama
+                      performances and poetry recitations, to encourage artistic
+                      expression.
+                    </p>
+                    <p>
+                      Worked closely with the academic team to update teaching
+                      strategies and ensure inclusivity in the classroom.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="flex flex-col mt-12 w-full max-md:mt-10 max-md:max-w-full"
+              >
+                <div
+                  class="flex w-full bg-black min-h-[1px] max-md:max-w-full"
+                  role="separator"
+                ></div>
+                <div
+                  class="flex flex-wrap gap-10 items-start mt-6 w-full max-md:max-w-full"
+                >
+                  <h2 class="font-bold w-[500px] max-md:max-w-full">
+                    English Literature Teacher Grade 6 - 8 Bright Horizon
+                    International School Gampaha, Sri Lanka 2015 - 2020
+                  </h2>
+                  <div class="flex-1 shrink basis-0 max-md:max-w-full">
+                    <p>
+                      Delivered engaging lessons on English literature, focusing
+                      on analysis, thematic discussions, and creative
+                      interpretations.
+                    </p>
+                    <p>
+                      Implemented formative and summative assessments to track
+                      and support students' learning journeys.
+                    </p>
+                    <p>
+                      Led a weekly book club to cultivate a love for reading and
+                      improve comprehension among students.
+                    </p>
+                    <p>
+                      Coordinated extracurricular activities, including drama
+                      performances and poetry recitations, to encourage artistic
+                      expression.
+                    </p>
+                    <p>
+                      Worked closely with the academic team to update teaching
+                      strategies and ensure inclusivity in the classroom.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="flex flex-col mt-12 w-full max-md:mt-10 max-md:max-w-full"
+              >
+                <div
+                  class="flex w-full bg-black min-h-[1px] max-md:max-w-full"
+                  role="separator"
+                ></div>
+                <div
+                  class="flex flex-wrap gap-10 items-start mt-6 w-full max-md:max-w-full"
+                >
+                  <h2 class="font-bold w-[500px] max-md:max-w-full">
+                    English Language Assistant Grade 8 - 11 Global Vision
+                    Academy Kandy, Sri Lanka 2012 - 2015
+                  </h2>
+                  <div class="flex-1 shrink basis-0 max-md:max-w-full">
+                    <p>
+                      Delivered engaging lessons on English literature, focusing
+                      on analysis, thematic discussions, and creative
+                      interpretations.
+                    </p>
+                    <p>
+                      Implemented formative and summative assessments to track
+                      and support students' learning journeys.
+                    </p>
+                    <p>
+                      Led a weekly book club to cultivate a love for reading and
+                      improve comprehension among students.
+                    </p>
+                    <p>
+                      Coordinated extracurricular activities, including drama
+                      performances and poetry recitations, to encourage artistic
+                      expression.
+                    </p>
+                    <p>
+                      Worked closely with the academic team to update teaching
+                      strategies and ensure inclusivity in the classroom.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <!-- contact -->
+        <section
+          id="contact"
+          class="flex overflow-hidden gap-10 items-start px-16 py-28 w-full text-black bg-white max-md:px-5 max-md:py-24 max-md:max-w-full"
+        >
+          <div
+            class="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full"
+          >
+            <h2
+              class="text-5xl font-bold leading-tight max-md:max-w-full max-md:text-4xl"
+            >
+              Contact Me
+            </h2>
+            <p class="mt-6 text-lg max-md:max-w-full">
+              Feel free to reach out to discuss my experience, teaching
+              philosophy, or any opportunities to collaborate.
+            </p>
+            <div
+              class="flex flex-col items-start self-start py-2 mt-8 text-base"
+            >
+              <a
+                href="mailto:hello@relume.io"
+                class="flex gap-4 items-start whitespace-nowrap hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/bbc3765d04abc1b79afe707f2d1b14fa1a54222649befef6a1d634542a65c30f?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt=""
+                  class="object-contain shrink-0 w-6 aspect-square"
+                  aria-hidden="true"
+                />
+                <span>hello@relume.io</span>
+              </a>
+              <a
+                href="tel:+15550000000"
+                class="flex gap-4 items-start mt-4 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/7c5b29a4f224a9e2b71173763af1c358e8c05f98f59230c02a12580ba6840354?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt=""
+                  class="object-contain shrink-0 w-6 aspect-square"
+                  aria-hidden="true"
+                />
+                <span>+1 (555) 000-0000</span>
+              </a>
+              <address
+                class="flex gap-4 items-start self-stretch mt-4 not-italic"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/7fb147081ce84ac9a573db19d9f3c9f9/383710363c313bbd0967e6a6d5ef55199a97c474761708e92f70720e3ea61fa6?apiKey=7fb147081ce84ac9a573db19d9f3c9f9&"
+                  alt=""
+                  class="object-contain shrink-0 w-6 aspect-square"
+                  aria-hidden="true"
+                />
+                <span>123 Sample St, Sydney NSW 2000 AU</span>
+              </address>
+            </div>
+            <p class="mt-8 w-full text-lg max-md:max-w-full">
+              I look forward to connecting with you!
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
