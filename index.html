@@ -3,11 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Portfolio</title>
+    <title>Teacher Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Test ...</h1>
-    <script src="scprit.js"></script>
+    <header>
+      <div class="container">
+        <h1>Mr./Ms. [Teacher's Name]</h1>
+        <p>Subject Specialist | Mentor | Educator</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am [Teacher's Name], an experienced educator with a passion
+          for teaching [Subject/Skills].
+        </p>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>10+ years teaching [Subject]</li>
+          <li>Worked at [School/Institution]</li>
+          <li>Recipient of [Awards]</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 [Teacher's Name]. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
